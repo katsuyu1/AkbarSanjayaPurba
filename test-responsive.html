@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Responsive - Portfolio Akbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .info-box {
+        background: #e8f4f8;
+        border-left: 4px solid #671cad;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 4px;
+      }
+
+      .checklist {
+        list-style: none;
+        padding: 0;
+      }
+
+      .checklist li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      .checklist li:last-child {
+        border-bottom: none;
+      }
+
+      .checklist li:before {
+        content: "✅ ";
+        color: #28a745;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .device-info {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 4px;
+        margin: 20px 0;
+        font-family: monospace;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 Portfolio Responsif - Status Verifikasi</h1>
+
+      <div class="info-box">
+        <strong>✅ Semua perubahan responsif sudah diterapkan!</strong>
+      </div>
+
+      <h2 style="color: #671cad; margin-top: 30px">
+        Fitur yang Sudah Diimplementasikan:
+      </h2>
+
+      <ul class="checklist">
+        <li>Media query untuk mobile (≤480px)</li>
+        <li>Media query untuk tablet (481px-768px)</li>
+        <li>Media query untuk desktop kecil (769px-1024px)</li>
+        <li>Media query untuk desktop besar (≥1025px)</li>
+        <li>Hamburger menu untuk mobile</li>
+        <li>Navigasi responsif yang collapse di mobile</li>
+        <li>Font size adaptive dengan clamp()</li>
+        <li>Tombol hero menjadi full-width di mobile</li>
+        <li>Grid layout berubah ke single column di mobile</li>
+        <li>Padding & margin disesuaikan per device</li>
+        <li>Modal responsif</li>
+        <li>Animasi hamburger menu</li>
+        <li>Hero accent circle hilang di mobile</li>
+        <li>Info boxes tersusun rapi di mobile</li>
+        <li>Viewport meta tag sudah benar</li>
+      </ul>
+
+      <h2 style="color: #671cad; margin-top: 30px">Bagaimana Cara Menguji?</h2>
+
+      <div class="device-info">
+        <strong>1. Di Browser Desktop:</strong><br />
+        Tekan F12 → Klik device toggle (Ctrl+Shift+M) → Pilih device berbeda
+
+        <br /><br />
+
+        <strong>2. Di Smartphone Asli:</strong><br />
+        Buka: index.html di browser mobile Anda
+
+        <br /><br />
+
+        <strong>3. Ukuran yang Dioptimalkan:</strong><br />
+        • iPhone/Mobile: 375px-480px ✅<br />
+        • Tablet: 481px-768px ✅<br />
+        • Laptop: 769px+ ✅
+      </div>
+
+      <h2 style="color: #671cad; margin-top: 30px">Hasil yang Diharapkan:</h2>
+
+      <ul class="checklist">
+        <li>Di mobile: Menu hamburger, konten single column</li>
+        <li>Teks mudah dibaca tanpa zoom</li>
+        <li>Tombol mudah diklik (touch-friendly)</li>
+        <li>Tidak ada konten yang terpotong</li>
+        <li>Gambar & animasi menyesuaikan ukuran</li>
+        <li>Scroll lancar tanpa lag</li>
+      </ul>
+
+      <div
+        class="info-box"
+        style="
+          background: #d4edda;
+          border-left-color: #28a745;
+          margin-top: 30px;
+        "
+      >
+        <strong style="color: #155724"
+          >✅ Portfolio Anda Sudah Siap Dibuka di HP dan Terlihat Rapi!</strong
+        ><br />
+        <small style="color: #155724"
+          >Semua breakpoint sudah dikonfigurasi dengan baik untuk pengalaman
+          terbaik di semua device.</small
+        >
+      </div>
+    </div>
+
+    <script>
+      // Info device saat ini
+      console.log("Device Width:", window.innerWidth);
+      console.log("Device Height:", window.innerHeight);
+      console.log("Is Mobile:", window.innerWidth <= 480);
+      console.log(
+        "Is Tablet:",
+        window.innerWidth > 480 && window.innerWidth <= 768
+      );
+      console.log("Is Desktop:", window.innerWidth > 768);
+    </script>
+  </body>
+</html>

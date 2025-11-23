@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant Portfolio - Akbar Sanjaya Purba</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Canvas Background -->
+    <div id="canvas-container"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="navbar-left">
+          <div class="logo">
+            <span class="logo-dot"></span>
+            <span class="logo-text">Portfolio</span>
+          </div>
+          <div class="social-icons-navbar">
+            <a
+              href="https://github.com"
+              target="_blank"
+              title="GitHub"
+              class="social-icon"
+            >
+              <span>🐙</span>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              title="LinkedIn"
+              class="social-icon"
+            >
+              <span>💼</span>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              title="Instagram"
+              class="social-icon"
+            >
+              <span>📷</span>
+            </a>
+          </div>
+        </div>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-intro">
+            <p class="intro-label">Welcome to my portfolio</p>
+            <h1 class="hero-name">Akbar Sanjaya Purba</h1>
+          </div>
+          <h2 class="hero-title">
+            <span class="word">Web</span>
+            <span class="word">Designer</span>
+          </h2>
+          <p class="hero-subtitle">
+            Web Developer | UI/UX Designer | Creative Developer<br />Crafting
+            extraordinary digital experiences with precision and elegance
+          </p>
+          <div class="hero-info">
+            <div class="info-item">
+              <span class="info-label">📧 Email:</span>
+              <span class="info-value">sanjayaakbar353@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📱 Phone:</span>
+              <span class="info-value">083146919884</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="viewCVBtn">View My CV</button>
+            <button class="btn btn-outline" id="downloadCVBtn">
+              Download CV
+            </button>
+          </div>
+        </div>
+        <div class="hero-accent"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-description">
+          <div class="about-text">
+            <h3>Who I Am</h3>
+            <p>
+              Saya lulusan S1 sistem komputer dengan pengalaman kerja di bidang
+              apoteker, F&B, dan ritel. Terampil dalam excel, word, power point,
+              dasar data analysis, pemrograman web dan IoT(ESP 32). Memiliki
+              kemampuan belajar cepat, displin, terbiasa bekerja dengan
+              teroganisir dan mampu bekerja dalam lingkungan yang dinamis. saat
+              ini aktif mengembangkan skil web development dan desain UI/UX. .
+            </p>
+            <p>
+              Berpengalaman dalam mengembangkan aplikasi web interaktif, animasi
+              3D yang memukau, dan interface design yang user-friendly. Saya
+              percaya bahwa desain yang baik harus menggabungkan estetika dengan
+              functionality.
+            </p>
+          </div>
+          <div class="about-info-box">
+            <div class="info-box-item">
+              <span class="info-icon">📍</span>
+              <div class="info-box-content">
+                <h4>Location</h4>
+                <p>Medan</p>
+              </div>
+            </div>
+            <div class="info-box-item">
+              <span class="info-icon">💼</span>
+              <div class="info-box-content">
+                <h4>Experience</h4>
+                <p>Web & Creative Development</p>
+              </div>
+            </div>
+            <div class="info-box-item">
+              <span class="info-icon">🎓</span>
+              <div class="info-box-content">
+                <h4>Focus</h4>
+                <p>Interactive Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="about-subtitle">My Expertise</h3>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Web Development</h3>
+            <p>
+              HTML, CSS, JavaScript, Three.js, WebGL dan modern frameworks untuk
+              aplikasi web yang responsif dan performant
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>UI/UX Design</h3>
+            <p>
+              Desain interface yang indah, user experience yang optimal, dan
+              attention to detail dalam setiap elemen visual
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>3D Animation</h3>
+            <p>
+              Menciptakan animasi 3D yang imersif, visual effects yang memukau,
+              dan interactive experiences dengan Three.js
+            </p>
+          </div>
+        </div>
+        <!-- Skills Section (new) -->
+        <h3 class="section-title" style="margin-top: 40px">Skills & Tools</h3>
+        <div class="skills-section">
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li>⚛️ HTML & CSS</li>
+                <li>🟨 JavaScript</li>
+                <li>🔷 TypeScript</li>
+                <li>⚙️ React / Frameworks</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Design & 3D</h3>
+              <ul class="skill-list">
+                <li>🎨 UI/UX (Figma)</li>
+                <li>🖼️ Visual Design</li>
+                <li>🕹️ Three.js / WebGL</li>
+                <li>📐 Prototyping</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Tools</h3>
+              <ul class="skill-list">
+                <li>🧰 Git / GitHub</li>
+                <li>⚡ VS Code</li>
+                <li>📊 Excel</li>
+                <li>🧪 Testing / Debugging</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="portfolio-section-content">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-number">01</div>
+            <h3>Interactive 3D Portfolio</h3>
+            <p>
+              Immersive web experiences with Three.js and WebGL technologies.
+              Featuring animated moon, butterflies, and particle effects.
+            </p>
+            <div class="project-tech">
+              <span>Three.js</span>
+              <span>WebGL</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank">🔗 Live Demo</a>
+              <a
+                href="https://github.com"
+                class="project-link github"
+                target="_blank"
+                >💻 GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-number">02</div>
+            <h3>Modern UI Design System</h3>
+            <p>
+              Comprehensive design system with modern interfaces focusing on
+              user experience, accessibility, and beautiful aesthetics. Fully
+              responsive.
+            </p>
+            <div class="project-tech">
+              <span>Figma</span>
+              <span>UI/UX</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"
+                >🔗 View Design</a
+              >
+              <a
+                href="https://github.com"
+                class="project-link github"
+                target="_blank"
+                >💻 GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-number">03</div>
+            <h3>Responsive Web Application</h3>
+            <p>
+              Full-stack web application with responsive design and high
+              performance. Built with modern frameworks and best practices for
+              all devices.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank">🔗 Live Demo</a>
+              <a
+                href="https://github.com"
+                class="project-link github"
+                target="_blank"
+                >💻 GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- New Project: Smart Home IoT (Kelompok) -->
+          <div class="project-card">
+            <div class="project-number">04</div>
+            <h3>Smart Home IoT (Kelompok)</h3>
+            <ul class="project-summary">
+              <li>
+                <strong>Ringkasan:</strong> Sistem otomasi rumah terintegrasi
+                untuk kontrol lampu, AC, dan monitoring lingkungan dengan
+                dashboard mobile real-time.
+              </li>
+              <li><strong>Durasi:</strong> 3 bulan (kelompok)</li>
+            </ul>
+            <div class="project-tech">
+              <span>ESP32</span>
+              <span>MQTT</span>
+              <span>Node-RED</span>
+              <span>Blynk</span>
+            </div>
+            <div class="project-meta">
+              <div class="project-thumb" aria-hidden="true">
+                <picture>
+                  <source
+                    srcset="
+                      assets/smart-home-480.webp 480w,
+                      assets/smart-home-800.webp 800w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      assets/smart-home-480.jpg 480w,
+                      assets/smart-home-800.jpg 800w
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="assets/smart-home-480.jpg"
+                    alt="Smart Home IoT prototype screenshot"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="project-roles">
+                <div class="project-role-label">
+                  <strong>Role:</strong> Integrator (ESP32 firmware & MQTT)
+                </div>
+                <ul class="project-role-list">
+                  <li>Integrasi ESP32 & sensor</li>
+                  <li>Konfigurasi MQTT Broker & Node-RED</li>
+                  <li>Desain dashboard mobile (Blynk)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"
+                >🔗 Demo (prototype)</a
+              >
+              <a
+                href="https://github.com"
+                class="project-link github"
+                target="_blank"
+                >💻 GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- New Project: Heart Rate & SpO2 Monitor -->
+          <div class="project-card">
+            <div class="project-number">05</div>
+            <h3>Heart Rate & SpO2 Monitor</h3>
+            <ul class="project-summary">
+              <li>
+                <strong>Ringkasan:</strong> Alat pemantauan denyut jantung &
+                SpO2 berbasis MAX30100 dan ESP32 dengan tampilan grafik
+                real-time dan notifikasi ambang pada aplikasi.
+              </li>
+              <li><strong>Durasi:</strong> 2 bulan (individu)</li>
+            </ul>
+            <div class="project-tech">
+              <span>MAX30100</span>
+              <span>ESP32</span>
+              <span>Blynk</span>
+              <span>Arduino</span>
+            </div>
+            <div class="project-meta">
+              <div class="project-thumb" aria-hidden="true">
+                <picture>
+                  <source
+                    srcset="
+                      assets/heart-monitor-480.webp 480w,
+                      assets/heart-monitor-800.webp 800w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      assets/heart-monitor-480.jpg 480w,
+                      assets/heart-monitor-800.jpg 800w
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="assets/heart-monitor-480.jpg"
+                    alt="Heart Rate & SpO2 monitor prototype"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="project-roles">
+                <div class="project-role-label">
+                  <strong>Role:</strong> Developer (Sensor interfacing & data
+                  visualization)
+                </div>
+                <ul class="project-role-list">
+                  <li>Implementasi MAX30100 dengan ESP32</li>
+                  <li>Filter sinyal & deteksi artefak</li>
+                  <li>Integrasi realtime ke Blynk + alert threshold</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"
+                >🔗 Dashboard (Blynk)</a
+              >
+              <a
+                href="https://github.com"
+                class="project-link github"
+                target="_blank"
+                >💻 GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Modal -->
+    <div class="modal" id="cvModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <div class="modal-header">
+          <h2>Curriculum Vitae</h2>
+          <div class="modal-line"></div>
+        </div>
+        <div class="cv-content">
+          <div class="cv-section">
+            <h3 class="cv-title">Personal Information</h3>
+            <div class="cv-item">
+              <strong>Name:</strong>
+              <p>Akbar Sanjaya Purba</p>
+            </div>
+            <div class="cv-item">
+              <strong>Email:</strong>
+              <p>sanjayaakbar353@gmail.com</p>
+            </div>
+            <div class="cv-item">
+              <strong>Phone:</strong>
+              <p>083146919884</p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-title">Skills</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Web Development</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Excel,Word,Power point</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">UI/UX Design</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript & TypeScript</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-title">Experience</h3>
+            <div class="cv-item">
+              <strong>r</strong>
+              <p class="cv-subtitle">2023 - Present</p>
+              <p>
+                Leading creative development projects with modern technologies
+                and innovative solutions.
+              </p>
+            </div>
+            <div class="cv-item">
+              <strong>Web Developer</strong>
+              <p class="cv-subtitle">2021 - 2023</p>
+              <p>
+                Developed interactive web applications and immersive 3D
+                experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-title">Education</h3>
+            <div class="cv-item">
+              <strong>Bachelor of System Computer</strong>
+              <p class="cv-subtitle">STMIK Triguna Dharma</p>
+              <p>Specialized in Web Development and Interactive Media</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-subtitle">
+          Hubungi saya untuk berdiskusi project, collaboration, atau sekedar
+          salam
+        </p>
+
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <div class="contact-icon">📧</div>
+            <h4>Email</h4>
+            <p>
+              <a href="mailto:sanjayaakbar353@gmail.com"
+                >sanjayaakbar353@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">📱</div>
+            <h4>WhatsApp / Phone</h4>
+            <p><a href="tel:+6283146919884">083146919884</a></p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">📍</div>
+            <h4>Location</h4>
+            <p>Medan</p>
+          </div>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:sanjayaakbar353@gmail.com" class="contact-link"
+            >📧 Email Me</a
+          >
+          <a
+            href="https://wa.me/6283146919884"
+            class="contact-link"
+            target="_blank"
+            >💬 WhatsApp</a
+          >
+          <a href="tel:+6283146919884" class="contact-link">📞 Call</a>
+        </div>
+
+        <p class="contact-note">
+          Saya akan membalas pesan Anda dalam 24 jam 🚀
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; 2025 Akbar Sanjaya Purba. All rights reserved.
+        </p>
+        <div class="footer-social">
+          <a
+            href="https://github.com"
+            target="_blank"
+            title="GitHub"
+            class="footer-social-link"
+          >
+            <span>🐙 GitHub</span>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            title="LinkedIn"
+            class="footer-social-link"
+          >
+            <span>💼 LinkedIn</span>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            title="Instagram"
+            class="footer-social-link"
+          >
+            <span>📷 Instagram</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts: dynamically loaded with diagnostics and automatic local fallback -->
+    <script>
+      (function () {
+        const scripts = [
+          "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js",
+          "https://unpkg.com/three@0.121.1/examples/js/postprocessing/EffectComposer.js",
+          "https://unpkg.com/three@0.121.1/examples/js/postprocessing/RenderPass.js",
+          "https://unpkg.com/three@0.121.1/examples/js/postprocessing/UnrealBloomPass.js",
+          // 'script.js' intentionally omitted to disable runtime JS for static preview
+        ];
+
+        function showLoaderOverlay(msg, persistent = false) {
+          try {
+            let o = document.getElementById("loader-overlay");
+            if (!o) {
+              o = document.createElement("div");
+              o.id = "loader-overlay";
+              o.style.position = "fixed";
+              o.style.left = "12px";
+              o.style.right = "12px";
+              o.style.top = "12px";
+              o.style.background = "rgba(20,20,30,0.98)";
+              o.style.color = "#fff";
+              o.style.zIndex = 99998;
+              o.style.padding = "16px";
+              o.style.borderRadius = "8px";
+              o.style.fontFamily = "Segoe UI, Tahoma, sans-serif";
+              o.style.boxShadow = "0 12px 40px rgba(0,0,0,0.6)";
+              o.style.maxHeight = "60vh";
+              o.style.overflow = "auto";
+              document.body.appendChild(o);
+            }
+            o.innerHTML = "<strong>Loader:</strong> " + String(msg);
+            if (!persistent) {
+              // auto-hide non-persistent messages after 3s
+              setTimeout(() => {
+                const cur = document.getElementById("loader-overlay");
+                if (cur && cur.innerHTML.indexOf("Error") === -1)
+                  cur.parentNode.removeChild(cur);
+              }, 3000);
+            }
+          } catch (e) {
+            console.error("Failed to show loader overlay", e);
+          }
+        }
+
+        function loadScript(src) {
+          return new Promise((resolve, reject) => {
+            const s = document.createElement("script");
+            s.src = src;
+            s.async = false;
+            s.onload = () => resolve(src);
+            s.onerror = (ev) => reject(new Error("Failed to load " + src));
+            document.head.appendChild(s);
+          });
+        }
+
+        function localFallbackUrl(remoteUrl) {
+          // map remote filename to local libs/ filename
+          try {
+            const parts = remoteUrl.split("/");
+            const name = parts[parts.length - 1] || parts[parts.length - 2];
+            return "libs/" + name;
+          } catch (e) {
+            return null;
+          }
+        }
+
+        (async function () {
+          for (let i = 0; i < scripts.length; i++) {
+            const src = scripts[i];
+            showLoaderOverlay(
+              "Loading " + src + " (" + (i + 1) + "/" + scripts.length + ")"
+            );
+            try {
+              await loadScript(src);
+              continue;
+            } catch (err) {
+              console.warn("CDN load failed for", src, err);
+              // try local fallback if available
+              const local = localFallbackUrl(src);
+              if (local) {
+                showLoaderOverlay(
+                  "CDN failed. Trying local fallback: " + local,
+                  true
+                );
+                try {
+                  await loadScript(local);
+                  showLoaderOverlay("Loaded local fallback: " + local);
+                  continue;
+                } catch (err2) {
+                  console.error("Local fallback also failed for", local, err2);
+                  showLoaderOverlay(
+                    "Error loading both CDN and local for: " +
+                      src +
+                      "\nLocal tried: " +
+                      local +
+                      "\n\nPlease place the required files in the `libs/` folder (see libs/README.md).",
+                    true
+                  );
+                  return;
+                }
+              } else {
+                showLoaderOverlay(
+                  "Error loading: " +
+                    src +
+                    "\n" +
+                    err.message +
+                    "\nNo local fallback available.",
+                  true
+                );
+                return;
+              }
+            }
+          }
+          // remove overlay after success
+          const o = document.getElementById("loader-overlay");
+          if (o) o.parentNode.removeChild(o);
+        })();
+      })();
+    </script>
+  </body>
+</html>
